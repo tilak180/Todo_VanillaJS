@@ -7,8 +7,6 @@ function checkboxChange(e) {
     var element = document.getElementById(valueId);
     if (isChecked) {
         var str = element.innerText;
-        console.log('innerText', str);
-        console.log('innerHtml', str.strike())
         element.innerHTML = str.strike()
     } else {
         var str = element.innerText;
