@@ -18,18 +18,19 @@
             #topic {
                 color: tomato;
             }
-	
              </style>
     </head>
     <body>
         <div id="demo"></div>
         <div class="card">
             <h1 id="topic">TODO</h1>
-            <div>
-                <input type="checkbox" onchange="checkboxChange(event)" id="first-checkbox" class="form-control" name="I have done HTML"/> <span id="first-value">I have done HTML</span><br>
-                <input type="checkbox" onchange="checkboxChange(event)" id="second-checkbox" class="form-control" name="I have done CSS"> <span id="second-value">  I have done CSS</span><br>   
-                <input type="checkbox" onchange="checkboxChange(event)" id="third-checkbox"  class="form-control" name="I have done JavaScript"> <span id="third-value"> I have done JavaScript</span><br>
-                <input type="checkbox" onchange="checkboxChange(event)" id="fourth-checkbox"  class="form-control" name="I have done All"> <span id="fourth-value">  I have done All</span><br>
+            <input type="text" id="myText" value=" ">
+            <button onclick="myFunction()">Add</button>
+            <div id="checkbox-container">
+                <input type="checkbox" onchange="checkboxChange(event)" id="1-checkbox" class="form-control" name="I have done HTML"/> <span id="1-value">I have done HTML</span><br>
+                <input type="checkbox" onchange="checkboxChange(event)" id="2-checkbox" class="form-control" name="I have done CSS"> <span id="2-value">  I have done CSS</span><br>   
+                <input type="checkbox" onchange="checkboxChange(event)" id="3-checkbox"  class="form-control" name="I have done JavaScript"> <span id="3-value"> I have done JavaScript</span><br>
+                <input type="checkbox" onchange="checkboxChange(event)" id="4-checkbox"  class="form-control" name="I have done All"> <span id="4-value">  I have done All</span><br>
             </div> 
         </div>
         <script src="./lib.js"></script>

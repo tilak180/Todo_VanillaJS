@@ -11,7 +11,15 @@ function checkboxChange(e) {
     } else {
         var str = element.innerText;
         element.innerHTML = str;
-    }
-} 
-
+    } 
+}
+    function myFunction() {
+    var newTask = document.getElementById("myText").value;
+    var currentLength = document.getElementsByClassName('form-control').length;
+    var container = document.getElementById('checkbox-container')
+    var newId = currentLength + 1;
+    console.log('<input type="checkbox /><span>' + newTask + '</span>')
+    container.innerHTML = container.innerHTML + '<input type="checkbox" id="'+newId+'-checkbox" onchange="checkboxChange(event)" class="form-control" /><span id="'+newId+'-value">' + newTask + '</span>'+'<br>';
+    var newTask = document.getElementById("myText").value="";
+}
 
