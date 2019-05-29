@@ -22,14 +22,16 @@
              </style>
     </head>
     <body>
+        <div id="demo"></div>
         <div class="card">
             <h1 id="topic">TODO</h1>
             <div>
-                <input type="checkbox" class="form-control" name="I have done HTML">I have done HTML<br>
-                <input type="checkbox" class="form-control" name="I have done CSS">I have done CSS<br>   
-                <input type="checkbox" class="form-control" name="I have done JavaScript">I have done JavaScript<br>
-                <input type="checkbox" class="form-control" name="I have done All">I have done All<br>
+                <input type="checkbox" onchange="checkboxChange(event)" id="first-checkbox" class="form-control" name="I have done HTML"/> <span id="first-value">I have done HTML</span><br>
+                <input type="checkbox" onchange="checkboxChange(event)" id="second-checkbox" class="form-control" name="I have done CSS"> <span id="second-value">  I have done CSS</span><br>   
+                <input type="checkbox" onchange="checkboxChange(event)" id="third-checkbox"  class="form-control" name="I have done JavaScript"> <span id="third-value"> I have done JavaScript</span><br>
+                <input type="checkbox" onchange="checkboxChange(event)" id="fourth-checkbox"  class="form-control" name="I have done All"> <span id="fourth-value">  I have done All</span><br>
             </div> 
         </div>
+        <script src="./lib.js"></script>
     </body>
 </html>
